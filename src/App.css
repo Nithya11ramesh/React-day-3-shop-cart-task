@@ -1,0 +1,8 @@
+/* The following line can be included in a src/App.scss */
+@import '~bootstrap/scss/bootstrap';
+
+@media screen and (min-width: 80rem) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
