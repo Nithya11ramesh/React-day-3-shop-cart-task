@@ -3,6 +3,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { IoIosStar } from "react-icons/io";
+import PropTypes from "prop-types";
 
 
 function Card({ handleCount, data }) {
@@ -71,4 +72,9 @@ function Card({ handleCount, data }) {
 
   )
 }
+
+Card.propTypes = {
+  data: PropTypes.string,
+  handleCount:PropTypes.func,
+  }
 export default Card;

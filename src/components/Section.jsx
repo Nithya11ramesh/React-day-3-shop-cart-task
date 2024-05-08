@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Card from "./Card"
+import Card from "./Card";
+import PropTypes from "prop-types";
 
 const Section = ({handleCount }) => {
 
@@ -84,4 +85,9 @@ const Section = ({handleCount }) => {
   )
 };
 
+Section.propTypes = {
+  data: PropTypes.string,
+  handleCount:PropTypes.func,
+  }
+  
 export default Section;
